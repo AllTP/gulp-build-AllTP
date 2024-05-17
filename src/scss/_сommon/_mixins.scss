@@ -1,0 +1,14 @@
+@mixin button-theme($background:linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%),
+ $color:#ffffff, $border:0)
+{
+  width: 157px;
+  height: 53px;
+  color: $color;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border: $border;
+  font-size: 18px;
+  border-radius: 28px;
+  background: $background;
+  cursor: pointer;
+}

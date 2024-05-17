@@ -1,0 +1,55 @@
+@use "variables" as v;
+
+%title {
+  .title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+%subtitle {
+  .subtitle {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+
+%description {
+  .description {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+%heading {
+
+  $heading-item-margin : v.$heading-item-margin;
+
+  font-family: v.$font;
+
+  .title {
+    margin: $heading-item-margin;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    margin: $heading-item-margin;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .description {
+    margin: $heading-item-margin;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+%bordered-image {
+  .bordered-image {
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,56 @@
+@use "../_сommon/variables" as v;
+@use "../_сommon/mixins" as m;
+
+.home-page {
+  font-family: v.$font;
+  background-color: v.$bg-color-dark;
+  color: white;
+  padding-top: 25px;
+
+  &__subtitle {
+    margin: 0 !important;
+    font-size: 62px !important;
+    font-weight: 700 !important;
+  }
+
+  &__primary-buttons {
+
+    .home-page__contact-button {
+      margin-left: 15px;
+      @include m.button-theme(transparent, white, 1px solid #FFFFFF);
+    }
+  }
+  padding-bottom: 25px;
+  .home-page__player {
+    width: 1110px;
+    height: 600px;
+    overflow: hidden;
+
+    margin: 25px auto 0 auto;
+    position: relative;
+
+    .home-page__play-btn {
+      width: 100px;
+      height: 100px;
+      background-image: url('./../img/home/play.png');
+      background-size: cover;
+      border: 0;
+      background-color: transparent;
+      position: absolute;
+      top: 43%;
+      left: 47%;
+      z-index: 2;
+    }
+
+    .home-page__bordered-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      z-index: 1;
+    }
+
+  }
+
+}
+

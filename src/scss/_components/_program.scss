@@ -1,0 +1,12 @@
+@use "./../_сommon/variables" as v;
+
+.program-page{
+  background-color: white;
+
+  .program-page__title{
+    color: v.$title-color-dark;
+  }
+  .program-page__subtitle {
+    color: v.$subtitle-color-dark;
+  }
+}

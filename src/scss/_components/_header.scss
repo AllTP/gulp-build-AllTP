@@ -1,0 +1,42 @@
+@use "../_сommon/mixins" as m;
+@use "../_сommon/variables" as v;
+
+header
+{
+  font-family: v.$font;
+  background-color: #161d2f;
+
+  nav
+  {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    a
+    {
+      font-size: 24px;
+      font-weight: 800;
+      text-decoration: none;
+      color: white;
+    }
+    ul
+    {
+      padding: 0;
+      display: flex;
+      list-style: none;
+      gap: 40px;
+      li
+      {
+        a
+        {
+          text-decoration: none;
+          color: white;
+          font-family: v.$font;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

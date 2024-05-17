@@ -1,0 +1,30 @@
+@use "reset";
+@use "mixins" as m;
+@use "extends" as e;
+@use "variables" as v;
+
+body {
+  .main {
+    @extend %bordered-image;
+    article{
+      padding-top: 25px;
+    }
+
+    text-align: center;
+
+    .join-button {
+      @include m.button-theme();
+    }
+
+    .content-wrap {
+      width: v.$content-width;
+      margin: auto;
+    }
+
+    .cards {
+      display: flex;
+    }
+
+    @extend %heading;
+  }
+}
